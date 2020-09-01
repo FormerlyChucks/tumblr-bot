@@ -10,7 +10,7 @@ Tumblr bot, made to automate gaining followers
 
       git clone https://github.com/Mr-Steal-Your-Script/tumblr-bot
       cd tumblr-bot
-      pip3 install requirements.txt
+      pip3 install -r requirements.txt
 * Assuming you have a tumblr account, go [here](https://www.tumblr.com/oauth/apps) to get signed up for the API
     * Click "+Register application"
     * Fill out the form
