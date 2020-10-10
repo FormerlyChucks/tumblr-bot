@@ -1,6 +1,5 @@
-import pytumblr
-import time
-from halo import Halo
+import time, pytumblr, traceback
+
 
 client = pytumblr.TumblrRestClient(
   '',
@@ -21,7 +20,7 @@ while True:
                 print("Followed: " + item["blog_name"] + ".tumblr.com")
         
     except Exception as e:
-        print(e)
+        print(str(traceback.format_exc()))
         time.sleep(60)
         
     except KeyboardInterrupt:
