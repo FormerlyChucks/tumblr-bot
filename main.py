@@ -2,8 +2,6 @@ import pytumblr
 import time
 from halo import Halo
 
-spinner = Halo(spinner={'interval': 100, 'frames': ['-', '+', '*', '+', '-']})
-
 client = pytumblr.TumblrRestClient(
   '',
   '',
@@ -15,7 +13,6 @@ tags = ['your', 'tags', 'to', 'follow', 'and', 'like']
 
 while True:
     try:
-        spinner.start()
         for tag in tags:
             for item in client.tagged(tag):
                 client.like(item["id"] , item["reblog_key"])
@@ -24,10 +21,9 @@ while True:
                 print("Followed: " + item["blog_name"] + ".tumblr.com")
         
     except Exception as e:
-        exc = str(str(e))
-        spinner.fail(text=exc)
+        print(e)
         time.sleep(60)
         
     except KeyboardInterrupt:
-        spinner.warn(text='shutting down :(')
+        print('shutting down :(')
         quit()
