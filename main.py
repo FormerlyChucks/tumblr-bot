@@ -8,7 +8,12 @@ client = pytumblr.TumblrRestClient(
   ''
 )
 
-tags = ['your', 'tags', 'to', 'follow', 'and', 'like']
+tags = ['your',
+        'tags',
+        'to',
+        'follow',
+        'and',
+        'like']
 
 while True:
     try:
