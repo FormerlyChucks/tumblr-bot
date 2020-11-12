@@ -22,7 +22,6 @@ while True:
                 client.like(item["id"] + item["reblog_key"])
                 client.follow(item["blog_name"] + ".tumblr.com")
                 print("Liked/Followed:",item["blog_name"])
-        
     except Exception as e:
         print(str(traceback.format_exc()))
         time.sleep(60)
