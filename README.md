@@ -8,7 +8,7 @@ Tumblr bot, made to automate gaining followers
 * Install git
 * In your terminal:
 
-      git clone https://github.com/Mr-Steal-Your-Script/tumblr-bot
+      git clone https://github.com/IThinkImOKAY/tumblr-bot
       cd tumblr-bot
       pip3 install pytumblr
 * Assuming you have a tumblr account, go [here](https://www.tumblr.com/oauth/apps) to get signed up for the API
@@ -19,7 +19,7 @@ Tumblr bot, made to automate gaining followers
 * Go [here](https://api.tumblr.com/console/calls/user/info) to get your keys
     * Select "PYTHON"
     * Copy the `client = pytumblr.TumblrRestClient(` part, which contains your four keys
-* Open [main.py](https://github.com/Mr-Steal-Your-Script/tumblr-bot/blob/master/main.py) in your favorite text editor
+* Open main.py in your favorite text editor
     * Replace the `client = pytumblr.TumblrRestClient(` in the file with your copied text
     * Save it
     * In your terminal, run:
