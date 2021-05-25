@@ -6,7 +6,7 @@ Tumblr bot, made to automate gaining followers
 * Figure out how to install Python, Pip and Git
 * In your terminal:
 
-      git clone https://github.com/StayWideAwake/tumblr-bot
+      git clone https://github.com/SlickTalk/tumblr-bot
       cd tumblr-bot
       pip3 install pytumblr
       
